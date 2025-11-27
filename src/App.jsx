@@ -5,6 +5,7 @@ import ScoreBoard from './components/ScoreBoard';
 import WinnerModal from './components/WinnerModal';
 import PlayerSetup from './components/PlayerSetup';
 import { RotateCcw, Users, Trophy } from 'lucide-react';
+import Footer from './components/Footer';
 
 function App() {
   const [players, setPlayers] = useState(null);
@@ -35,6 +36,7 @@ function App() {
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-fuchsia-500/20 rounded-full blur-[120px]" />
         <PlayerSetup onStartGame={handleStartGame} />
+        <Footer />
       </div>
     );
   }
@@ -83,6 +85,7 @@ function App() {
       </div>
 
       <WinnerModal winner={winner} onReset={resetGame} players={players} />
+      <Footer />
     </div>
   );
 }
