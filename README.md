@@ -1,16 +1,41 @@
-# React + Vite
+🎮 Tic Tac Toe Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Tic-Tac-Toe game built using React + Vite.
+This game includes two game modes:
 
-Currently, two official plugins are available:
+👤 Player vs Player (PvP)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🤖 Player vs Computer (PvC) (with basic computer logic)
 
-## React Compiler
+🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✔️ Clean UI and smooth gameplay
+✔️ Two play modes (PvP and PvC)
+✔️ Smart turn-based logic
+✔️ Displays winner, draw, and restart option
+✔️ Responsive layout for desktop and mobile
+✔️ Built using React hooks (useState, useEffect)
 
-## Expanding the ESLint configuration
+🧠 Game Rules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Two players take turns placing X and O on a 3×3 board.
+
+First player is always X.
+
+A player wins if they complete a row, column, or diagonal.
+
+If all squares are filled with no winner, the game ends in a draw.
+
+🕹️ How to Play
+
+Choose your mode:
+
+👤 Player vs Player
+
+🤖 Player vs Computer
+
+Click on any empty cell to place your symbol.
+
+The game updates the board, checks the winner, and shows the result.
+
+Press Restart anytime to play a new game.
